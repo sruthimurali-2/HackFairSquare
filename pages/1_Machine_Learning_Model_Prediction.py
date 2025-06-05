@@ -65,8 +65,61 @@ def get_secret(key, default=""):
 
 # --- Streamlit App Layout ---
 st.set_page_config(page_title="Augur - Fair Value Classification Model",layout="centered")
+st.markdown("""
+<style>
+.big-title {
+    font-size: 2.4em;
+    font-weight: bold;
+    color: #003366;
+    margin: 0.67em 0;
+    font-family: 'Segoe UI', sans-serif;
+}
+div.stButton > button {
+    background-color: #e1f5fe !important;
+    color: #000 !important;
+    border-left: 5px solid #0288d1 !important;
+    border-radius: 8px !important;
+    padding: 0.5rem 1rem !important;
+    font-weight: bold !important;
+    transition: all 0.3s ease;
+    outline: none !important;
+    box-shadow: none !important;
+}
+div.stButton > button:hover {
+    background-color: #d0effb !important;
+    color: #000 !important;
+    border-left: 5px solid #003366 !important;
+    cursor: pointer;
+    outline: none !important;
+    box-shadow: none !important;
+}
+div.stButton > button:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+[data-baseweb="tab"] {
+    font-weight: 500;
+    font-size: 1rem;
+    color: #333 !important;
+    padding 0.75rem 1.5rem;
+}
+[data-baseweb="tab"][aria-selected="true"] {
+    border-color: none !important;
+    color: #003366 !important;
+    border-bottom: 3px solid #003366 !important;
+}
+[data-baseweb="tab"]:hover {
+    color: #003366 !important;
+    border-bottom: 3px solid #003366 !important;
+}
+</style>
+""", unsafe_allow_html=True)
 
-st.title("Augur - Fair Value Classification Model")
+st.markdown("""
+<div class="big-title">Augur - Fair Value Classification Model</div>
+""", unsafe_allow_html=True)
+
+#st.title("Augur - Fair Value Classification Model")
 st.markdown("""
 We leverage advanced machine learning techniques to predict the **fair value classification of financial instruments** in accordance with **IFRS 13** guidelines. 
 Model prediction is grounded with observability-based risk assessments and analytical review for robust internal validation and reporting.

@@ -16,14 +16,14 @@ Use the sidebar to choose a module.
 st.markdown("""
 <style>
 .big-title {
-    font-size: 2.8em;
-    font-weight: 700;
-    color: #0d6efd;
-    margin-bottom: 0.2em;
+    font-size: 2.4em;
+    font-weight: bold;
+    color: #003366;
+    margin: 0.67em 0;
     font-family: 'Segoe UI', sans-serif;
 }
 .subtitle {
-    font-size: 1.3em;
+    font-size: 1.em;
     color: #333;
     margin-bottom: 1.5em;
     font-family: 'Segoe UI', sans-serif;
@@ -32,8 +32,8 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 st.markdown("""
-<div class="big-title"> Welcome to the IFRS13 Fair Value Classification Appplication</div>
-<div class="subtitle">A modular, explainable, and friendly classification tool - To be raplced tomo</div>
+<div class="big-title"> Welcome to the IFRS13 Fair Value Classification Application</div>
+<div class="subtitle">A modular, explainable, and friendly classification tool - to simplify and streamline the process of fair value classification</div>
 """, unsafe_allow_html=True)
 
 st.info("Use the navigation on the left sidebar to begin.")

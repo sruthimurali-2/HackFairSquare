@@ -4,7 +4,45 @@ import os
 from Observability_Stress_Module import simulate_greeks, generate_trade_pv_and_risk_pvs, ir_delta_stress_test, vol_risk_stress_test
 
 st.set_page_config(page_title="Risk Factor Testing", layout="wide")
-st.title("Grounding Model Predictions with Risk Factor Observability")
+st.markdown("""
+<style>
+.big-title {
+    font-size: 2.4em;
+    font-weight: bold;
+    color: #003366;
+    margin: 0.67em 0;
+    font-family: 'Segoe UI', sans-serif;
+}
+div.stButton > button {
+    background-color: #e1f5fe !important;
+    color: #000 !important;
+    border-left: 5px solid #0288d1 !important;
+    border-radius: 8px !important;
+    padding: 0.5rem 1rem !important;
+    font-weight: bold !important;
+    transition: all 0.3s ease;
+    outline: none !important;
+    box-shadow: none !important;
+}
+div.stButton > button:hover {
+    background-color: #d0effb !important;
+    color: #000 !important;
+    border-left: 5px solid #003366 !important;
+    cursor: pointer;
+    outline: none !important;
+    box-shadow: none !important;
+}
+div.stButton > button:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+</style>
+""", unsafe_allow_html=True)
+
+st.markdown("""
+<div class="big-title">Grounding Model Predictions with Risk Factor Observability</div>
+""", unsafe_allow_html=True)
+#st.title("Grounding Model Predictions with Risk Factor Observability")
 
 st.markdown("""
 We perform a quantitative overlay on model-predicted fair value classifications by applying **risk factor-based stress testing**.  
